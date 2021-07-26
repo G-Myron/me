@@ -1,7 +1,11 @@
 
+::-webkit-scrollbar {
+    display: none; /*Hide window scrollbar*/
+}
+
 body{
     background-color: blueviolet;
-    font-family: monospace;
+    font-family: serif;
     font-size: 1.2em;
 }
 
@@ -12,8 +16,9 @@ ul{
 
 fieldset{
     background-color: aliceblue;
+    width: 75%;
     padding: 1em 0;
-    margin: 1em 0;
+    margin: 1em auto;
     border: none;
     border-radius: 1em;
 }
@@ -32,17 +37,19 @@ section{
     background-color: #bbc;
     display: flex;
     justify-content: start;
+    position: relative;
 }
 
 div{
     background-color: plum;
     margin: 3px;
-    display: flex;
 }
 
 .date{
     background-color: red;
     /* justify-content: end; */
-    margin-left: auto;
+    position: absolute;
+    right: 0em;
+    margin-right: 0;
 }
 
