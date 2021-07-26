@@ -1,67 +1,47 @@
 
-:root{
-    --page-height: 97vh;
-}
-
 body{
-    background-image: url("Purple BackGround.jpg");
-    background-repeat: repeat-y;
-    background-size: contain;
-    height: 400vh;
+    background-color: blueviolet;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 
-ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
+ul{
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
 }
 
-.page{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: baseline;
-    align-content: space-around;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-
-    
-    
-    position: absolute;
-    bottom: 0;
-    --ang: "0deg";
-    transform: rotateX(var(--ang)) rotateZ(var(--ang));
-    transform-style: preserve-3d;
-    /* -webkit-backface-visibility: hidden; */
-    backface-visibility: hidden;
+fieldset{
+    background-color: aliceblue;
+    padding: 1em 0;
+    margin: 1em 0;
+    border: none;
+    border-radius: 1em;
 }
 
-.field{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: white;
-    border: 2px solid black;
-    width: 45vw;
-    min-width: 500px;
-    height: 45vh;
-    min-height: 250px;
+legend{
+    font-size: 1.2em;
+    width: 20em;
+    background-color: purple;
+    color: aliceblue;
+    text-align: center;
+    border: 3px dashed black;
+    border-radius: 5px;
 }
 
-.field > div{
+section{
+    background-color: #bbc;
     display: flex;
-    align-items: center;
-    font-size: 2em;
-    height: 3em;
-    padding: 0 0.5em;
-    background-color:blueviolet;
-    color: white;
-    border: 3px solid black;
-    border-radius: 8px;
+    justify-content: start;
+}
+
+div{
+    background-color: plum;
+    margin: 3px;
+    display: flex;
+}
+
+.date{
+    background-color: red;
+    /* justify-content: end; */
+    margin-left: auto;
 }
