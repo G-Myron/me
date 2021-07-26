@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Who is Myron?</title>
-
-    <!-- Bootstrap --
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    -->
-
-    <link rel="stylesheet" href="myStyle.css">
-    <script src="index.js" defer></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Myron</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a5/About.me_icon.jpg">
+    <script src="code.js"></script>
 </head>
 <body>
-    <script>window.scrollTo(0,0)</script>
     <ul>
-        <section class="page" id="page1">
+        <fieldset class="page" id="page1" title="Personal info">
+            <legend>Personal Information &emsp; <span class="material-icons">badge</span></legend>
+            <section class="field" id="name">
+                <div class="question">What is my name?</div>
+                <div class="answer">Myron Giannakis</div>
+            </section>
+            <section class="field" id="age">
+                <div class="question">When was I born?</div>
+                <div class="answer">October 2001</div>
+            </section>
+            <section class="field" id="town">
+                <div class="question">Where am I from?</div>
+                <div class="answer">Thessaloniki, Greece, Europe</div>
+            </section>
+        </fieldset>
+        <fieldset class="page" id="page2" title="Education">
+            <legend>Education &emsp; <span class="material-icons">school</span></legend>
             <section class="field">
-                <div>What is my name?</div>
-                <div>Myron Giannakis</div>
+                <div class="question">University:</div>
+                <div class="answer">ECE at the University of Patras, Greece.</div>
             </section>
             <section class="field">
-                <div>When was I born?</div>
-                <div>2001</div>
+                <div class="question">When was I born?</div>
+                <div class="answer">2001</div>
             </section>
             <section class="field">
-                <div>What is my name:</div>
-                <div>Myron Giannakis</div>
+                <div class="question">What is my name:</div>
+                <div class="answer">Myron Giannakis</div>
             </section>
-            <section class="field">
-                <div>What is my name:</div>
-                <div>Myron Giannakis</div>
-            </section>
-        </section>
-        <section class="page" id="page2">
-            <section class="field">
-                <div>What is my name:</div>
-                <div>Myron Giannakis</div>
-            </section>
-            <section class="field">
-                <div>What is my name:</div>
-                <div>Myron Giannakis</div>
-            </section>
-            <section class="field">
-                <div>What is my name:</div>
-                <div>Myron Giannakis</div>
-            </section>
-        </section>
-        <section class="page" id="page3">
-            <section class="field">
-                <div>What is my name:</div>
-                <div>Myron Giannakis</div>
-            </section>
-        </section>
+        </fieldset>
     </ul>
 </body>
 </html>
-
