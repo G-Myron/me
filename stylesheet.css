@@ -1,0 +1,48 @@
+
+body{
+    background-color: blueviolet;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+fieldset{
+    background-color: aliceblue;
+    padding: 1em 0;
+    margin: 1em 0;
+    border: none;
+    border-radius: 1em;
+}
+
+legend{
+    font-size: 1.2em;
+    width: 20em;
+    background-color: purple;
+    color: aliceblue;
+    text-align: center;
+    border: 3px dashed black;
+    border-radius: 5px;
+}
+
+section{
+    background-color: #bbc;
+    display: flex;
+    justify-content: start;
+}
+
+div{
+    background-color: plum;
+    margin: 3px;
+    display: flex;
+}
+
+.date{
+    background-color: red;
+    /* justify-content: end; */
+    margin-left: auto;
+}
+
