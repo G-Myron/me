@@ -25,7 +25,8 @@ fieldset{
 
 legend{
     font-size: 1.2em;
-    width: 20em;
+    width: 50%;
+    min-width: fit-content;
     background-color: purple;
     color: aliceblue;
     text-align: center;
@@ -37,19 +38,28 @@ section{
     background-color: #bbc;
     display: flex;
     justify-content: start;
+    align-items: center;
+    min-height: 2em;
     position: relative;
 }
 
 div{
     background-color: plum;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     margin: 3px;
 }
 
 .date{
-    background-color: red;
-    /* justify-content: end; */
-    position: absolute;
-    right: 0em;
-    margin-right: 0;
+    background-color: aquamarine;
+    margin-left: auto;
+    /* position: absolute;
+    right: 0em; */
+}
+
+a{
+    color: initial;
+    text-decoration: none;
 }
 
