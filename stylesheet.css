@@ -3,6 +3,11 @@
     display: none; /*Hide window scrollbar*/
 }
 
+::selection{
+    background-color: black;
+    color: white;
+}
+
 body{
     background-color: blueviolet;
     font-family: serif;
@@ -71,6 +76,8 @@ a{
 
 
 nav{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     left: 0;
     top: 0;
