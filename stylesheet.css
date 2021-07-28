@@ -14,7 +14,7 @@ ul{
     margin: 0;
 }
 
-fieldset{
+fieldset.page{
     background-color: aliceblue;
     width: 75%;
     padding: 1em 0;
@@ -23,18 +23,18 @@ fieldset{
     border-radius: 1em;
 }
 
-legend{
+fieldset.page>legend{
+    background-color: purple;
+    color: aliceblue;
     font-size: 1.2em;
     width: 50%;
     min-width: fit-content;
-    background-color: purple;
-    color: aliceblue;
     text-align: center;
     border: 3px dashed black;
     border-radius: 5px;
 }
 
-section{
+section.field{
     background-color: #bbc;
     display: flex;
     justify-content: start;
@@ -43,15 +43,16 @@ section{
     position: relative;
 }
 
-div{
+section.field > div{
     background-color: plum;
     display: flex;
     align-items: center;
     padding: 5px;
     margin: 3px;
+    border-radius: 8px;
 }
 
-.date{
+section.field > div.date{
     background-color: aquamarine;
     margin-left: auto;
     /* position: absolute;
@@ -61,5 +62,53 @@ div{
 a{
     color: initial;
     text-decoration: none;
+    cursor: alias;
+}
+
+
+
+/*///////////////////////////////////////////////////--- SIDE NAVBAR -------------------------------------------------///*/
+
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 2.5%;
+    overflow: hidden;
+    border: 2px solid aliceblue;
+    transition: 1s;
+}
+
+nav>ul{
+    display: grid;
+    align-content: start;
+    height: 100%;
+    cursor: alias;
+}
+
+nav a{
+    cursor: pointer;
+    margin: 5px 0;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    transition: .5s;
+}
+
+nav:hover{
+    width: 12.5%;
+    background-color: black;
+    transition: 1.5s;
+}
+
+nav ul:hover a{
+    color: initial;
+    background-color: #bbc;
+    transition: 1s;
+}
+nav ul a:hover{
+    background-color: blueviolet;
+    transition: .5s;
 }
 
