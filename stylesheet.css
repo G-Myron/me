@@ -19,7 +19,7 @@ ul{
     margin: 0;
 }
 
-fieldset.page{
+fieldset.page, footer{
     background-color: aliceblue;
     width: 75%;
     padding: 1em 0;
@@ -70,6 +70,10 @@ a{
     cursor: alias;
 }
 
+footer{
+    background-color: plum;
+}
+
 
 
 /*///////////////////////////////////////////////////--- SIDE NAVBAR -------------------------------------------------///*/
@@ -84,15 +88,19 @@ nav{
     height: 100vh;
     width: 2.5%;
     overflow: hidden;
-    border: 2px solid aliceblue;
     transition: 1s;
+}
+
+nav>*{                  /*-----------Maybe Delete It---------*/
+    width: 12.5vw;
 }
 
 nav>ul{
     display: grid;
     align-content: start;
-    height: 100%;
-    cursor: alias;
+    height: 50%;
+    padding: 1em 0;
+    cursor: grabbing;
 }
 
 nav a{
@@ -100,12 +108,13 @@ nav a{
     margin: 5px 0;
     color: aliceblue;
     border: 2px solid aliceblue;
-    transition: .5s;
+    transition: 1s;
 }
 
 nav:hover{
     width: 12.5%;
     background-color: black;
+    border: 2px solid aliceblue; /*Maybe in original nav*/
     transition: 1.5s;
 }
 
