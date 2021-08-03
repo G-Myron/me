@@ -47,6 +47,7 @@ section.field{
     align-items: center;
     min-height: 2em;
     position: relative;
+    border-bottom: 2px solid aliceblue;
 }
 
 section.field > div{
@@ -58,6 +59,9 @@ section.field > div{
     border-radius: 8px;
 }
 
+section.field > div.question{
+    background-color: coral;
+}
 section.field > div.date{
     background-color: aquamarine;
     margin-left: auto;
