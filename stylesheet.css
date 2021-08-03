@@ -125,7 +125,7 @@ nav:hover, nav.clicked{
     transition: 2s;
 }
 
-nav *:hover:not(ul){
+nav> *:hover:not(ul), nav.clicked> *:not(ul){
     background-color: blueviolet;
     transition: 1.5s;
 }
