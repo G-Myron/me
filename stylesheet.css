@@ -47,7 +47,7 @@ section.field{
     align-items: center;
     min-height: 2em;
     position: relative;
-    border-bottom: 2px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
 }
 
 section.field > div{
@@ -96,9 +96,12 @@ nav{
     transition: 1s;
 }
 
-nav>*{                  /*-----------Maybe Delete It---------*/
+nav>*{
+    font-family: Garamond,sans-serif;
     width: 12.5vw;
-    height: 10%;
+    min-height: 10%;
+    cursor: grabbing;
+    transition: 1s;
 }
 
 nav>ul{
@@ -106,10 +109,9 @@ nav>ul{
     align-content: start;
     height: 50%;
     padding: 1em 0;
-    cursor: grabbing;
 }
 
-nav a{
+nav> ul> a{
     cursor: pointer;
     color: aliceblue;
     margin: 5px 2px;
@@ -117,15 +119,15 @@ nav a{
     transition: 1s;
 }
 
-nav:hover{
+nav:hover, nav.clicked{
     width: 12.5%;
     background-color: black;
-    transition: 1.5s;
+    transition: 2s;
 }
 
 nav *:hover:not(ul){
     background-color: blueviolet;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 nav ul:hover a{

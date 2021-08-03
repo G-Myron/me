@@ -9,8 +9,13 @@
     <script src="code.js"></script>
 </head>
 <body>
-    <nav>
-        <h4>This is a site about me!</h4>
+    <nav onclick="
+        if(this.classList.contains('clicked')) this.classList.remove('clicked');
+        else this.classList.add('clicked');
+    ">
+        <h4>
+            Not just a successful engineer. I am studying to become something more than that…
+        </h4>
         <ul>
             <a href="#page1">About me</a>
             <a href="#page2">Education</a>
@@ -22,13 +27,9 @@
         <fieldset class="page" id="page1" title="Personal info">
             <legend>Personal Information &emsp; <span class="material-icons">badge</span></legend>
             <section class="field" id="name">
-                <div class="question">What is my name?</div>
+                <div class="question">Who am I?</div>
                 <div class="answer"><a href="https://www.linkedin.com/in/myron-giannakis" target="blank">Myron Giannakis</a></div>
                 <div class="date">October 2001</div>
-            </section>
-            <section class="field" id="age">
-                <div class="question">When was I born?</div>
-                <div class="answer">October 2001</div>
             </section>
             <section class="field" id="town">
                 <div class="question">Where do I live?</div>
