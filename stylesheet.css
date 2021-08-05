@@ -19,13 +19,12 @@ ul{
     margin: 0;
 }
 
-fieldset.page, footer{
+fieldset.page{
     /* background-color: aliceblue; */
     width: 75%;
     padding: 1em 0;
     margin: 1em auto;
-    border: 2px solid aliceblue;
-    /* border: none; */
+    border: 2px solid aliceblue; /* border: none; */
     border-radius: 1em;
 }
 
@@ -38,6 +37,7 @@ fieldset.page>legend{
     text-align: center;
     border: 3px dashed black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 section.field{
@@ -69,14 +69,20 @@ section.field > div.date{
     right: 0em; */
 }
 
-a{
+section.field a{
     color: initial;
     text-decoration: none;
     cursor: alias;
 }
 
 footer{
+    display: flex;
+    align-items: center;
     background-color: plum;
+    width: 75%;
+    margin: 1em auto;
+    border: 1px solid aliceblue;
+    border-radius: 1em;
 }
 
 
@@ -133,7 +139,7 @@ nav> *:hover:not(ul), nav.clicked> *:not(ul){
 nav ul:hover a{
     color: initial;
     background-color: #bbc;
-    transition: 1s;
+    transition: 1.5s;
 }
 nav ul a:hover{
     background-color: blueviolet;
