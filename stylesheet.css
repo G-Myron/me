@@ -1,3 +1,8 @@
+:root{
+    --bg-color: blueviolet;/*rgb(170, 90, 245);*/
+    --grey-color: #bbc;
+    --white-color: aliceblue;
+}
 
 ::-webkit-scrollbar {
     display: none; /*Hide window scrollbar*/
@@ -5,11 +10,11 @@
 
 ::selection{
     background-color: black;
-    color: white;
+    color: var(--white-color);
 }
 
 body{
-    background-color: blueviolet;
+    background-color: var(--bg-color);
     font-family: serif;
     font-size: 1.2em;
 }
@@ -19,39 +24,43 @@ ul{
     margin: 0;
 }
 
+* > a{
+    color: inherit;
+    text-decoration: auto;
+}
+
 fieldset.page{
     /* background-color: aliceblue; */
     width: 75%;
     padding: 1em 0;
     margin: 1em auto;
-    border: 2px solid aliceblue; /* border: none; */
+    border: 2px solid var(--white-color); /* border: none; */
     border-radius: 1em;
 }
 
 fieldset.page>legend{
     background-color: purple;
-    color: aliceblue;
+    color: var(--white-color);
     font-size: 1.2em;
     width: 50%;
     min-width: fit-content;
     text-align: center;
     border: 3px dashed black;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 section.field{
-    background-color: #bbc;
+    background-color: var(--grey-color);
     display: flex;
     justify-content: start;
     align-items: center;
     min-height: 2em;
     position: relative;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid var(--white-color);
 }
 
 section.field > div{
-    background-color: plum;
+    background-color: var(--white-color);
     display: flex;
     align-items: center;
     padding: 5px;
@@ -60,7 +69,8 @@ section.field > div{
 }
 
 section.field > div.question{
-    background-color: coral;
+    background-color: black;
+    color: dodgerblue;/*gold;*/
 }
 section.field > div.date{
     background-color: aquamarine;
@@ -78,12 +88,14 @@ section.field a{
 footer{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     background-color: plum;
-    width: 75%;
+    width: 50%;
     margin: 1em auto;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--white-color);
     border-radius: 1em;
 }
+
 
 
 
@@ -99,6 +111,7 @@ nav{
     height: 100vh;
     width: 2.5%;
     overflow: hidden;
+    opacity: 0;
     transition: 1s;
 }
 
@@ -106,7 +119,7 @@ nav>*{
     font-family: Garamond,sans-serif;
     width: 12.5vw;
     min-height: 10%;
-    cursor: grabbing;
+    cursor: none;
     transition: 1s;
 }
 
@@ -119,30 +132,31 @@ nav>ul{
 
 nav> ul> a{
     cursor: pointer;
-    color: aliceblue;
+    color: var(--white-color);
     margin: 5px 2px;
-    border: 2px solid aliceblue;
+    border: 2px solid var(--white-color);
     transition: 1s;
 }
 
 nav:hover, nav.clicked{
     width: 12.5%;
     background-color: black;
-    transition: 2s;
+    opacity: 1;
+    transition: 1s;
 }
 
 nav> *:hover:not(ul), nav.clicked> *:not(ul){
-    background-color: blueviolet;
+    background-color: var(--bg-color);
     transition: 1.5s;
 }
 
-nav ul:hover a{
+nav> ul:hover> a{
     color: initial;
-    background-color: #bbc;
-    transition: 1.5s;
+    background-color: var(--grey-color);
+    transition: .5s;
 }
-nav ul a:hover{
-    background-color: blueviolet;
+nav> ul> a:hover{
+    background-color: var(--bg-color);
     transition: .5s;
 }
 
