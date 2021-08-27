@@ -187,8 +187,10 @@ nav> ul> a:hover{
 @media (max-aspect-ratio: 1/1), (max-width: 850px){   /*------------ w/h = 1  or  w<=850 -------------*/
 
 body{
+    background-color: darkblue;
     font-size: 3vw;
 }
+
 footer img{
     width: 5vw;
 }
