@@ -16,10 +16,10 @@
 body{
     background-color: var(--bg-color);
     font-family: serif;
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 
-ul{
+body> ul{
     padding: 0;
     margin: 0;
 }
@@ -42,7 +42,7 @@ fieldset.page>legend{
     background-color: purple;
     color: var(--white-color);
     font-size: 1.2em;
-    width: 50%;
+    width: 40%;
     min-width: fit-content;
     text-align: center;
     border: 3px dashed black;
@@ -50,7 +50,7 @@ fieldset.page>legend{
 }
 
 section.field{
-    background-color: var(--grey-color);
+    background-color: black;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -64,7 +64,7 @@ section.field > div{
     display: flex;
     align-items: center;
     padding: 5px;
-    margin: 3px;
+    margin: 5px;
     border-radius: 8px;
 }
 
@@ -73,10 +73,11 @@ section.field > div.question{
     color: dodgerblue;/*gold;*/
 }
 section.field > div.date{
-    background-color: aquamarine;
+    background-color: var(--bg-color);
+    color: var(--white-color);
     margin-left: auto;
     /* position: absolute;
-    right: 0em; */
+    right: 0; */
 }
 
 section.field a{
@@ -88,13 +89,26 @@ section.field a{
 footer{
     display: flex;
     align-items: center;
+    width: 60%;
     justify-content: space-around;
-    background-color: plum;
-    width: 50%;
+    background-color: lightblue;
+        background-color: purple;
+    color: var(--white-color);
     margin: 1em auto;
     border: 1px solid var(--white-color);
+        border: 3px dashed black;
     border-radius: 1em;
 }
+
+footer> *:first-child{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/* footer> a{
+    background-color: var(--bg-color);
+    padding: 1em;
+} */
 
 
 
@@ -108,10 +122,11 @@ nav{
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 10;
     height: 100vh;
     width: 2.5%;
     overflow: hidden;
-    opacity: 0;
+    opacity: 0.1;
     transition: 1s;
 }
 
@@ -128,10 +143,11 @@ nav>ul{
     align-content: start;
     height: 50%;
     padding: 1em 0;
+    margin: 0;
 }
 
 nav> ul> a{
-    cursor: pointer;
+    cursor: inherit;
     color: var(--white-color);
     margin: 5px 2px;
     border: 2px solid var(--white-color);
