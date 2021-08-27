@@ -16,7 +16,7 @@
 body{
     background-color: var(--bg-color);
     font-family: serif;
-    font-size: 3vh;
+    font-size: 1.5vw;
 }
 
 body> ul{
