@@ -30,12 +30,19 @@ body> ul{
 }
 
 fieldset.page{
-    /* background-color: aliceblue; */
+    background-color: var(--white-color);
     width: 75%;
     padding: 1em 0;
     margin: 1em auto;
     border: 2px solid var(--white-color); /* border: none; */
     border-radius: 1em;
+    box-shadow: black 20px;
+    transition: all .75s;
+}
+
+fieldset.page:hover{
+    transform: scale( 1.2, 1.2) translateX(0);
+    box-shadow: black 20px;
 }
 
 fieldset.page> legend{
@@ -53,6 +60,9 @@ fieldset.page> legend{
 }
 fieldset.page> legend span{
     font-size: 100%;
+}
+fieldset.page> legend a{
+    width: 100%;
 }
 
 section.field{
@@ -111,12 +121,13 @@ footer> *:first-child{
     display: flex;
     justify-content: center;
 }
-/* footer> a{
-    background-color: var(--bg-color);
-    padding: 1em;
-} */
 
-
+footer> a{
+    transition: .75s;
+}
+footer> a:hover{
+    transform: rotate( 1.5turn) scale( 1.5, 1.5);
+}
 
 
 /*///////////////////////////////////////////////////--- SIDE NAVBAR -------------------------------------------------///*/
@@ -126,7 +137,7 @@ nav{
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 1px;
+    left: 0;
     top: 0;
     font-family: Garamond,sans-serif;
     z-index: 10;
@@ -138,9 +149,9 @@ nav{
 }
 
 nav>*{
-    width: 100%; /*12.5vw;*/
+    width: 12.5vw; /*100%;*/
     padding: 5px 0;
-    cursor: none;
+    /* cursor: none; */
     transition: 1s;
 }
 
@@ -153,7 +164,7 @@ nav>ul{
 }
 
 nav> ul> a{
-    cursor: inherit;
+    cursor: pointer;
     color: var(--white-color);
     margin: 5px 2px;
     border: 2px solid var(--white-color);

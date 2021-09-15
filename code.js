@@ -21,7 +21,6 @@ function myIcon(ctx, d=400){
     ctx.moveTo( d/2,0);
     ctx.lineTo( d/2, d);
     x = d/goldB;
-    console.log(x);
     ctx.moveTo(x,0);
     ctx.lineTo(x, d/2);
     x += d/2;
@@ -34,6 +33,24 @@ function myIcon(ctx, d=400){
     ctx.fill();
     ctx.strokeStyle = "white";
     ctx.stroke();
+
+    let wave = function(x) {return 20 * Math.sin(x/10)};
+    drawFunc( ctx, wave, undefined, undefined, undefined, drawStyle=[15, "orange"]);
 }
 
+function drawFunc(ctx,  f , startPoint=[100, 100], xRange=[0, 200], numOfPoints=100, drawStyle=[5,"black"]){
+    [x0,y0] = startPoint;
+    let incr = (xRange[1]-xRange[0]) / numOfPoints;
+    console.log(drawStyle);
+
+    ctx.beginPath();
+    ctx.moveTo(x0+xRange[0], y0-f(xRange[0]));
+
+    for (var x = xRange[0]; x <= xRange[1]; x+= incr){
+        ctx.lineTo(x0 + x, y0 - f(x));
+    }
+    
+    [ctx.lineWidth, ctx.strokeStyle] = drawStyle;
+    ctx.stroke();
+}
 
