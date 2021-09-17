@@ -19,6 +19,10 @@ body{
     font-size: 1.2em;
 }
 
+.noscroll{
+    overflow-y: hidden;
+}
+
 body> ul{
     padding: 0;
     margin: 0;
@@ -101,6 +105,13 @@ section.field a{
     text-decoration: none;
     cursor: alias;
 }
+
+iframe{
+    min-height: 75vh;
+    min-width: 75vw;
+    overscroll-behavior: none;
+}
+
 
 footer{
     display: flex;
